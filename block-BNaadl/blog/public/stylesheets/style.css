@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+}
+header {
+  width: 100%;
+  background-color: black;
+  padding: 1rem;
+  color: coral;
+}
+header a {
+  color: white;
+  font-size: 20px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  text-align: center;
+}
+form {
+  width: 600px;
+  margin: 0 auto;
+}
+textarea {
+  width: 100%;
+}
+label {
+  font-size: 1.3rem;
+}
+.btn-index {
+  font-size: 20px;
+  background-color: aquamarine;
+  border: 1px dashed red;
+  padding: 0.8rem 1rem;
+}
+.btn-index a:hover {
+  text-decoration: underline;
+}
+a {
+  text-decoration: none;
+}
+
+.card {
+  text-align: center;
+  border-bottom: 2px dotted black;
+  padding: 1rem;
+}
+.card_title {
+  text-align: left;
+  font-size: 25px;
+}
+.card_body p {
+  text-align: left;
+  line-height: 25px;
+  font-size: 17px;
+}
+p.card_author {
+  text-align: center;
+}
+i.fa {
+  font-size: 20px;
+}
+.likes {
+  font-size: 18px;
+}
+a.read_more {
+  background-color: rgba(36, 33, 33, 0.719);
+  padding: 10px 5px;
+  border-radius: 15px;
+  color: white;
+}
+.form-control {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+input {
+  width: 100%;
+  padding: 10px 2px;
+  margin: 0.5rem 0;
+}
+input[type="submit"] {
+  background-color: yellowgreen;
+  color: black;
+  border: 0;
+  font-size: 15px;
+}
+
+section {
+  background-color: cadetblue;
+  margin: 10px 0;
+  /* width: 60%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+section span {
+  margin-left: 0.5rem;
+  font-size: 25px;
+  text-decoration: underline;
+}

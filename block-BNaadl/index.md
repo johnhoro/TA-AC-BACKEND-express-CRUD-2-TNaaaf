@@ -16,6 +16,7 @@ Q. Create an express application named as `blog` using generator.
     - likes -> Number
   - button to increament/decrement like
   - button to edit article
+
   - button to delete article
 
 - article create form
