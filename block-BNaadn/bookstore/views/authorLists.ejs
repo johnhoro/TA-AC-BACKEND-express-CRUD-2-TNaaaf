@@ -1,0 +1,13 @@
+<%- include('partials/header') -%> <%- include('partials/navbar') -%>
+<div class="container">
+  <ol>
+    <% authors.forEach(author => { %>
+    <li class="list-type">
+      <span>
+        <a href="/authors/<%= author._id %>"><%= author.name %></a>
+      </span>
+    </li>
+    <% }) %>
+  </ol>
+</div>
+<%- include('partials/footer') -%>

@@ -1,0 +1,9 @@
+<%- include('partials/header') -%> <%- include('partials/navbar') -%>
+<div class="container">
+  <ul>
+    <% categories.forEach(category => { %>
+    <li class="list-type"><%= category.name %></li>
+    <% }) %>
+  </ul>
+</div>
+<%- include('partials/footer') -%>
