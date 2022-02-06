@@ -1,0 +1,31 @@
+<%- include(`partials/header`) -%>
+
+<form action="/books/<%= book.id %>" method="POST">
+  <input
+    type="text"
+    value="<%= book.title%>"
+    name="title"
+    placeholder="Add Title!"
+  />
+  <textarea name="summary" rows="10"><%= book.summary %></textarea>
+  <input
+    type="number"
+    value="<%= book.pages %>"
+    name="pages"
+    placeholder="Enter no. of pages"
+  />
+  <input
+    type="text"
+    value="<%= book.publications %>"
+    name="publications"
+    placeholder="Add publications"
+  />
+  <input
+    type="text"
+    value="<%=book.cover_image %>"
+    name="cover_image"
+    placeholder="Image url"
+  />
+  <input type="submit" />
+</form>
+<%- include(`partials/footer`) -%>
