@@ -1,0 +1,21 @@
+<%- include(`partials/header`) -%> <%- include(`partials/navbar`) -%>
+<div class="container">
+  <h1>Book Details</h1>
+  <h2>Title:- <%= books.title %></h2>
+  <p>Summary:- <%= books.summary %></p>
+  <p>Pages:- <%= books.pages %></p>
+  <p>Publications:- <%= books.publications%></p>
+  <img src="<%= books.cover_image%>" alt="img" />
+
+  <div class="edit-box">
+    <a href="/books/<%= books.id %>/edit">Edit</a>
+    <a href="/books/<%= books.id %>/delete">Delete</a>
+  </div>
+  <div>
+    <h3>Comment</h3>
+    <form action="">
+      <input type="text" placeholder="Author" value="" />
+    </form>
+  </div>
+</div>
+<%- include(`partials/footer`) -%>

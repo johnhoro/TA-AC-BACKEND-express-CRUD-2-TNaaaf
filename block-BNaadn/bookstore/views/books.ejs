@@ -1,0 +1,13 @@
+<%- include(`partials/header`) -%> <%- include(`partials/navbar`) -%>
+
+<div class="container">
+  <h1>Welcome to bookList</h1>
+  <% books.forEach(b=>{ %>
+
+  <h2><%= b.title %></h2>
+
+  <a href="/books/<%= b.id %>">Details</a>
+  <% }) %>
+</div>
+
+<%- include(`partials/footer`) -%>
